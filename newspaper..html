@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      gap: 5px;
+      background-color: #4c4e50;
+      padding: 10px;
+      max-width: 800px;
+      margin: auto;
+      min-height: 100vh;
+    }
+
+    .container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .header h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .menu {
+      grid-area: menu;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+      margin: 20px auto;
+    }
+
+    @keyframes example {
+      from { background-color: red; }
+      to { background-color: yellow; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header"><h2>PRASAD TIMES</h2></div>
+
+  <div class="menu">
+    <a href="#">BREAKING NEWS</a><br>
+    <a href="#">HEADLINES</a><br>
+    <a href="#">SPORTS</a><br>
+    <a href="#">NATIONAL</a><br>
+    <a href="#">INTERNATIONAL</a>
+  </div>
+
+  <div class="content">
+    <h3>Telangana State</h3>
+    <p>Telangana is a state in southern India,
+         formed on June 2, 2014, after being part of Andhra Pradesh.
+        It's known for its diverse culture, rich history, and growing economy,
+         particularly in manufacturing and IT services.
+        Telangana is situated on the Deccan Plateau and is drained by the Godavari and Krishna rivers. Its capital and largest city is Hyderabad.</p>
+    <img src="C:\html\tg" alt="Telangana" style="width:50%; height:auto;">
+  
+  <div class="footer"><h4>Footer</h4></div>
+</div>
+
+</body>
+</html>

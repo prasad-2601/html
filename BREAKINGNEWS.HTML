@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BREAKING NEWS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      gap: 5px;
+      background-color: #4c4e50;
+      padding: 10px;
+      max-width: 800px;
+      margin: auto;
+      min-height: 100vh;
+    }
+
+    .container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .menu {
+      grid-area: menu;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    .menu a {
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .menu a:hover {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header"><h2>PRASAD TIMES</h2></div>
+
+  <div class="menu">
+    <a onclick="loadBreakingNews()">BREAKING NEWS</a>
+    <a href="#">HEADLINES</a>
+    <a href="#">SPORTS</a>
+    <a href="#">NATIONAL</a>
+    <a href="#">INTERNATIONAL</a>
+  </div>
+
+  <div class="content">
+    <h3>Welcome</h3>
+    <p>Click on "BREAKING NEWS" to view today's top stories.</p>
+  </div>
+
+  <div class="footer"><h4>Footer</h4></div>
+</div>
+
+<script>
+function loadBreakingNews() {
+  const contentDiv = document.querySelector('.content');
+  contentDiv.innerHTML = `
+    <h3>Breaking News</h3>
+    <p>🛰️ <strong>Indian Astronaut Returns to Earth:</strong> Shubhanshu Shukla, part of the Axiom-4 crew, successfully undocked from the International Space Station and is expected to land today.</p>
+    <p>🇧🇷 <strong>Brazil Honors PM Modi:</strong> Prime Minister Narendra Modi was conferred Brazil’s highest civilian honor, the Grand Collar of the National Order of the Southern Cross, recognizing his contributions to India-Brazil relations.</p>
+    <p>📈 <strong>India-Brazil Trade Target:</strong> India and Brazil aim to boost bilateral trade to $20 billion over the next five years, with growing cooperation in defense and energy.</p>
+  `;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Cards Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">My Bootstrap World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    
+  <body class="bg-light text-center p-4">
+    <h1 class="display-4 fw-bold text-primary mb-4">Welcome to Bootstrap World</h1>
+    <p class="lead text-muted mb-5">Explore elegant typography and sleek card designs using Bootstrap 5.</p>
+    <div class="mb-5">
+      <button type="button" class="btn btn-primary m-1">Primary</button>
+      <button type="button" class="btn btn-secondary m-1">Secondary</button>
+      <button type="button" class="btn btn-success m-1">Success</button>
+      <button type="button" class="btn btn-danger m-1">Danger</button>
+      <button type="button" class="btn btn-warning m-1">Warning</button>
+      <button type="button" class="btn btn-info m-1">Info</button>
+      <button type="button" class="btn btn-light m-1">Light</button>
+      <button type="button" class="btn btn-dark m-1">Dark</button>
+      <button type="button" class="btn btn-link m-1">Link</button>
+    </div>
+    <div class="container mt-4">
+      <div class="row justify-content-between">
+        <div class="col-md-4 d-flex justify-content-start mb-4">
+          <div class="card border-secondary shadow-sm" style="width: 18rem;">
+            <img src="C:\Users\CVR\Downloads\DAS.JPG" class="card-img-top" alt="Arjun Das">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">ARJUN DAS</h5>
+              <p class="card-text text-muted">Vikram, Kaidhi — roles that left a mark.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+          <div class="card shadow" style="width: 22rem;">
+            <img src="C:\Users\CVR\Downloads\images.jpg" class="card-img-top" alt="ROLEX">
+            <div class="card-body">
+              <h5 class="card-title text-success fw-bold">ROLEX ATHREYA SHIVA</h5>
+              <p class="card-text text-muted">
+                GAJHINI, 7TH SENSE, BANDOBHASTH, JAI BHIM — iconic tales and powerful dialogues.
+              </p>
+              <a href="#" class="btn btn-outline-primary">ROLEX</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-end mb-4">
+          <div class="card border-info shadow-sm" style="width: 18rem;">
+            <img src="C:\Users\CVR\Downloads\KARTHI.JPG" class="card-img-top" alt="Karthi">
+            <div class="card-body">
+              <h5 class="card-title text-info fw-bold"> Karthi DILLI</h5>
+              <p class="card-text text-muted">
+                Exploring Bootstrap layout with ease — perfectly positioned for impact.
+              </p>
+              <a href="#" class="btn btn-outline-info">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="C:\Users\CVR\Downloads\images.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\CVR\Downloads\DAS.JPG" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\CVR\Downloads\KARTHI.JPG" class="d-block w-100" alt="Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
